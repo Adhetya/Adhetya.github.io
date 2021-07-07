@@ -12,29 +12,23 @@ const scissors_div = document.getElementById("s");
 const reset_button = document.getElementById("reset");
 const rounds_span = document.getElementById("round-number");
 
-function getComputerChoice()
-{
-    const choices = ["r","p","s"];
-    const randomNumber = Math.floor(Math.random()*3);
+function getComputerChoice() {
+    const choices = ["r", "p", "s"];
+    const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
-function convertToWord(letter)
-{
-    if(letter == 'r')
-    {
+function convertToWord(letter) {
+    if (letter == 'r') {
         return "Rock";
     }
-    if(letter == 'p')
-    {
+    if (letter == 'p') {
         return "Paper";
     }
-    if(letter == 's')
-    {
+    if (letter == 's') {
         return "Scissors";
     }
 }
-function win(userChoice, computerChoice)
-{
+function win(userChoice, computerChoice) {
     const smallUserWord = "user".fontsize(3).sub();
     const smallCompWord = "comp".fontsize(3).sub();
     const userChoice_div = document.getElementById(userChoice);
@@ -43,10 +37,9 @@ function win(userChoice, computerChoice)
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord}. You win!`;
     document.getElementById(userChoice).classList.add("green-glow");
-    setTimeout(()=> userChoice_div.classList.remove("green-glow"),300);
+    setTimeout(() => userChoice_div.classList.remove("green-glow"), 300);
 }
-function lose(userChoice, computerChoice)
-{
+function lose(userChoice, computerChoice) {
     const smallUserWord = "user".fontsize(3).sub();
     const smallCompWord = "comp".fontsize(3).sub();
     const userChoice_div = document.getElementById(userChoice);
@@ -57,8 +50,9 @@ function lose(userChoice, computerChoice)
     userChoice_div.classList.add("red-glow");
     setTimeout(() => document.getElementById(userChoice).classList.remove("red-glow"), 300);
 }
-function draw(userChoice, computerChoice)
-{
+function draw(userChoice, computerChoice) {
+    userScore += 0.5;
+    computerScore += 0.5;
     const smallUserWord = "user".fontsize(3).sub();
     const smallCompWord = "comp".fontsize(3).sub();
     const userChoice_div = document.getElementById(userChoice);
@@ -66,21 +60,20 @@ function draw(userChoice, computerChoice)
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. Its a draw🍎`;
     userChoice_div.classList.add("gray-glow");
-    setTimeout(() => document.getElementById(userChoice).classList.remove("gray-glow"),300);
-    
+    setTimeout(() => document.getElementById(userChoice).classList.remove("gray-glow"), 300);
+
 }
-function rounds()
-{
-    noOfRounds+=1;
-    if(noOfRounds == 10)
-    {
+function rounds() {
+    noOfRounds += 1;
+    if (noOfRounds == 11) {
         gameOver = true;
         result();
     }
-    rounds_span.innerHTML = noOfRounds;
+    else {
+        rounds_span.innerHTML = noOfRounds;
+    }
 }
-function reset()
-{
+function reset() {
     userScore = 0;
     computerScore = 0;
     noOfRounds = 1;
@@ -90,25 +83,19 @@ function reset()
     rounds_span.innerHTML = noOfRounds;
     result_p.innerHTML = "Paper covers rock. Rock destroys scissors. Scissors cut paper.";
 }
-function result()
-{
-    if(userScore > computerScore)
-    {
+function result() {
+    if (userScore > computerScore) {
         result_p.innerHTML = "You won the  previous game😀";
     }
-    else if(userScore < computerScore)
-    {
+    else if (userScore < computerScore) {
         result_p.innerHTML = "You lost the previous game😔"
     }
-    else
-    {
+    else {
         result_p.innerHTML = "Match ended in a draw🤝";
     }
 }
-function game(userChoice)
-{
-    if(gameOver)
-    {
+function game(userChoice) {
+    if (gameOver) {
         return;
     }
     const computerChoice = getComputerChoice();
@@ -133,12 +120,11 @@ function game(userChoice)
             break;
     }
 }
-function main()
-{
+function main() {
     rock_div.addEventListener('click', () => game("r"));
     paper_div.addEventListener('click', () => game("p"));
-    scissors_div.addEventListener('click',() => game("s"));
-    reset_button.addEventListener('click',() => {
+    scissors_div.addEventListener('click', () => game("s"));
+    reset_button.addEventListener('click', () => {
         reset();
     })
 }
