@@ -164,6 +164,7 @@ header > h1{
 }
 .result{
     color: #f3ca20;
+    height: 100px;
     padding: 20px 25px;
 }
 .result > p{
