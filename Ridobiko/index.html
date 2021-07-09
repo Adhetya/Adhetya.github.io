@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ridobiko Interview Challenge</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-elements flex-container">
+            <a href="#"><img src="images/rentomojo-logo.png" class="logo"></a>
+            <span class="city">Delhi</span>
+            <i class="material-icons" id="light-arrow">expand_more</i>
+            <div class="input-icons">
+                <input type="text" placeholder="Search for products" class="search">
+                <i class="material-icons icon">search</i>
+            </div>
+            <i class="material-icons icon">shopping_cart</i>
+            Cart
+            <!--<span class="cart"></span>Cart</span>-->
+            <i class="material-icons icon photo">account_circle</i>
+            <nav>
+                <div class="dropdown">
+                    <div class = "account">
+                    <button onclick="toggleDisplay()">Ridobiko</button>
+                        <ul id = "settings">
+                            <li>
+                            <div class ="wrapper">
+                                <i class="material-icons">perm_identity</i>
+                                <a href="#">My Account</a>
+                            </div>
+                            </li>
+                            <div class="wrapper">
+                                <i class="material-icons">favorite_border</i>
+                                <li><a href="#">My Wishlist</a></li>
+                            </div>
+                            <div class="wrapper">
+                                <i class="material-icons">settings</i>
+                                <li><a href="#">Settings</a></li>
+                            </div>
+                            <div class="wrapper">
+                                <i class="material-icons">logout</i>
+                                <li><a href="#">Logout</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="container">
+            <img src = "images/background-image.dms">
+        </div>
+        <div class="sidebar">
+            <div class = "white-bg">
+                <h2>Ultima Appliances Combo</h2>
+                <div class="green-text">
+                    <p>3 Products</p>
+                </div>
+            </div>
+            <div class="question">
+                How long do you want to rent this for? (Months)
+                <i class="material-icons icons">info</i>
+            </div>
+            <div class="slidecontainer white-bg">
+                <input type="range" min="3" max="12" value="4" class="slider" id="myRange">
+            </div>
+            <div class="grid-sub-container white-bg">
+                <div class="box1">
+                    <p><span class = "price-box">₹1307</span></b>/ mo</p>
+                    <br>
+                     Monthly Rent
+                    <i class="material-icons icon">info</i>
+                </div>
+                <div class="box2">
+                    <p><span class = "price-box">₹2987</span></p>
+                    <br>
+                     Refundable 
+                    <i class="material-icons icon">info</i>
+                </div>
+                <div class="box3">
+                    <div class="flex-container">
+                        <div class="small-text">
+                            <i class="material-icons">check_circle</i>
+                            7 days free trial
+                        </div>
+                        <div class="small-text">
+                            <i class="material-icons">check_circle</i>
+                            Free relocation
+                        </div>
+                        <div class="small-text">
+                            <i class="material-icons">check_circle</i>
+                            Free upgrades
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery white-bg">
+                <i class="material-icons">local_shipping</i>
+                 Delivery by 11 Jul 2021
+                 <div class = "button">
+                    <button>Book Your Plan</button>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src = "app.js"></script>
+</body>
+</html> 
