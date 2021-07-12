@@ -36,7 +36,6 @@ html, body{
 }
 .opening-text{
     width: 60%;
-    padding: 15px;
     font-size: 12px;
     line-height: 25px;
 }
@@ -102,11 +101,11 @@ html, body{
   .opening-text{
       font-size: 10px;
       width: 300px;
+      margin-bottom: 7%;
       line-height: 15px;
-      padding-bottom: 5%;
   }
   .blue{
-      padding: 7% 5%;
+      padding: 7% 9%;
   }
   .burger{
     display: flex;
@@ -142,7 +141,7 @@ html, body{
 .material-icons{
     border-radius: 50%;
     font-size: 18px;
-    margin-right:15px;
+    margin-right:10px;
 }
 .icon-blue > p{
     font-size: 10px;
@@ -153,6 +152,6 @@ html, body{
     padding: 10px;
 }
 .whitebg{
-    padding: 7% 5%;
+    padding: 7% 9%;
 }
 }
