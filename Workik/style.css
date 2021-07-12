@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -15,34 +15,37 @@ html, body{
 }
 .column{
     flex: 50%;
-    font-size: 14px;
-    line-height: 22px;
-    padding: 12% 3%;
-}
-.column > h3{
-    margin-left: 40px;
+    padding: 11% 4%;
 }
 .burger{
     background-color: #04A9F4;
-    width: 100px;
+    width: 75px;
 }
 .left-text{
-    float: left;
     opacity: 0;
 }
 .right-text{
-    float: right;
     opacity: 0;
 }
-.blue > h1{
+.opening-text > h1{
     font-size: 45px;
-    line-height: 45px;
-    font-family: 'Comfortaa', cursive;
-    margin-bottom: 25px;
+    line-height: 35px;
+    width: 260px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 10%;
+}
+.opening-text{
+    width: 60%;
+    padding: 15px;
+    font-size: 12px;
+    line-height: 25px;
 }
 .blue{
     background-color: #04A9F4;
     color: white;
+}
+.icon-blue > p{
+    font-size: 12px;
 }
 .blue-icons{
     color:#04A9F4;
@@ -51,36 +54,59 @@ html, body{
 .material-icons{
     border-radius: 50%;
     padding: 5px;
-    margin-right:10px;
+    font-size: 5px;
+    margin-right:20px;
 }
-.icon-text{
-    margin-top: 5%;
+.icon-blue{
+    margin-top: 4%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+.icon-text{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.whitebg{
+    padding: 13% 6%;
+    line-height: 22px;
+}
 .white{
     color: white;
     background-color: #04A9F4;
+    padding: 10px;
 }
 .white-text{
-    margin-bottom: 5%;
+    padding: 1%;
+    font-size: 10px;
 }
-@media screen and (max-width: 768px) {
+.header{
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+@media screen and (max-width: 600px) {
   .container { 
     flex-direction: column;
   }
-  .blue > h1{
-      font-size: 30px;
-      line-height: 35px;
+  .opening-text > h1{
+      font-size: 27px;
+      line-height: 22px;
+      width: 160px;
+      margin-bottom: 4%;
+  }
+  .opening-text{
+      font-size: 10px;
+      width: 300px;
+      line-height: 15px;
+      padding-bottom: 5%;
   }
   .blue{
-      font-size: 12px;
-      line-height: 18px;
-      padding: 12%;
-  }
-  .white-text{
-      padding: 5%;
+      padding: 7% 5%;
   }
   .burger{
     display: flex;
@@ -89,7 +115,7 @@ html, body{
     background-color: white;
     width: 100%;
     height: 50px;
-    padding: 2%;
+    padding: 4%;
 }
 .left-text{
     font-size: 15px;
@@ -99,6 +125,7 @@ html, body{
 .right-text{
     position: absolute;
     right: 0;
+    color: #04A9F4;
     opacity: 1;
 }
 .white-text{
@@ -106,11 +133,26 @@ html, body{
     font-size: 10px;
 }
 .icon-text{
-    font-size: 12px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .material-icons{
     border-radius: 50%;
-    padding: 5px;
-    margin-right:10px;
+    font-size: 18px;
+    margin-right:15px;
+}
+.icon-blue > p{
+    font-size: 10px;
+}
+.white{
+    color: white;
+    background-color: #04A9F4;
+    padding: 10px;
+}
+.whitebg{
+    padding: 7% 5%;
 }
 }
