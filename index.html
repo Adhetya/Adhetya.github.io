@@ -1,294 +1,127 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-    <title>Coronavirus website</title>
-      <link href="./resources/style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-      <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/1de329a514.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class = "introduction" id = "introduction">
-      <h1>Coronavirus</h1>
-      <p>The biggest pandemic of the 21st century</p>
-      <button class = "buttons"><a href = "#container">Go Down</a></button>
-      <button class = "buttons"><a href = "#stats">Statistics</a></button>
-    </div>
-    <div class = "grid-container" id = "container">
-      <div class = "box">
-        <div class = "box-content how"><h1>Introduction</h1>
-          <br>
-          <i class="fas fa-users fa-3x icon"></i>
-          <p>COVID-19 has impacted our lives in ways we have never experienced before. Sometimes, we wonder if things will ever go back to the way
-          it was before. These are difficult days, but with today's medical advancements, we can hope to find to cure sooner or later.</p>
-          <br>
-          <p>In the meantime, stay home and stay safe.</p>
-          <h1> How it Spreads?</h1>
-            <i class="fas fa-head-side-virus fa-3x icon"></i>
-          <br>
-            <i class="fas fa-head-side-cough fa-3x icon"></i>
-           <p>COVID-19 spreads mainly by droplets produced as a result of coughing or sneezing of a COVID-19 infected person.</p>
-             <br>
-             <p>This can happen in two ways:
-               <ul>
-                 <li><b>Direct close contact:</b> one can get the infection by being in close contact with COVID-19 patients</li>
-                 <li><b>Indirect contact:</b> the droplets survive on surfaces and clothes for many days. </li>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+    <title>My Website</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">AN</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#welcome-section">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-              <br>
-                Therefore,touching any such infected surface and then touching one’s mouth, nose or eyes can transmit the disease.</p>
-          <br>
         </div>
-      </div>
+    </nav>
+    <section id="welcome-section">
+        <h1>Hi, my name is Adhetya</h1>
+        <p>Student | Aspiring Web Developer</p>
+        <!-- <button class="theme-toggle-button">
+            <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M7.5,2C5.71,3.15 4.5,5.18 4.5,7.5C4.5,9.82 5.71,11.85 7.53,13C4.46,13 2,10.54 2,7.5A5.5,5.5 0 0,1 7.5,2M19.07,3.5L20.5,4.93L4.93,20.5L3.5,19.07L19.07,3.5M12.89,5.93L11.41,5L9.97,6L10.39,4.3L9,3.24L10.75,3.12L11.33,1.47L12,3.1L13.73,3.13L12.38,4.26L12.89,5.93M9.59,9.54L8.43,8.81L7.31,9.59L7.65,8.27L6.56,7.44L7.92,7.35L8.37,6.06L8.88,7.33L10.24,7.36L9.19,8.23L9.59,9.54M19,13.5A5.5,5.5 0 0,1 13.5,19C12.28,19 11.15,18.6 10.24,17.93L17.93,10.24C18.6,11.15 19,12.28 19,13.5M14.6,20.08L17.37,18.93L17.13,22.28L14.6,20.08M18.93,17.38L20.08,14.61L22.28,17.15L18.93,17.38M20.08,12.42L18.94,9.64L22.28,9.88L20.08,12.42M9.63,18.93L12.4,20.08L9.87,22.27L9.63,18.93Z" />
+            </svg>Switch theme
+        </button> -->
+    </section>
+    <hr>
+    <section id="about">
+        <div class="card">
+            <div class="profile-sidebar">
+                <img src="/Users/adhetyanarayan/Documents/Code/Adhetya.github.io/assets/Adhetya Image.jpg" alt="Photo">
+                <ul class="social-list">
+                    <li class="social-item"><a aria-label="facebook-icon" href="#" class="social-link"><i
+                                class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li class="social-item"><a aria-label="linkedin-icon" href="#" class="social-link"><i
+                                class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li class="social-item"><a aria-label="github-icon" href="#" class="social-link"><i
+                                class="fab fa-github-square fa-2x"></i></a></li>
+                </ul>
+            </div>
 
-      <div class = "box">
-        <div class = "box-content">
-          <h1>COVID-19 Symptoms</h1>
-              <br>
-              <table style="width:100%" class = "table-responsive">
-                <tr>
-                  <th>Symptoms</th>
-                  <th>COVID-19</th>
-                  <th>Flu</th>
-                  <th>Allergies</th>
-                </tr>
-                  <td>Fever</td>
-                  <td>Common</td>
-                  <td>Common</td>
-                  <td>Sometimes</td>
-                <tr>
-                  <td>Dry cough</td>
-                  <td>Common</td>
-                  <td>Common</td>
-                  <td>Sometimes</td>
-                </tr>
-                <tr>
-                  <td>Shortness of breath</td>
-                  <td>Common</td>
-                  <td>No</td>
-                  <td>Sometimes</td>
-                </tr>
-              </table>
-              <br>
-              <div class = "flexcontainer">
-                <h1>Precautions and Measures</h1>
-                <div class = "icons">
-                <i class="fas fa-hands-wash fa-2x"></i>
-                <div class = "content">
-                  <h3>WASH.YOUR.HANDS</h3>
-                  <hr>
-                  <p>Wash your hands with soap and water regularly.</p>
-                </div>
+            <div class="profile-main">
+                <h2 class="profile-name">Adhetya Narayan</h2>
+                <p class="profile-position">Computer Science student</p>
+                <p class="profile-body">Hello! I am currently a 3rd year student in MIT, Anna University. I have always
+                    been amazed by the fact that you can build something incredible with a few lines of code which is
+                    probably why I developed an interest in Computer Science. I am a quick learner and someone who is
+                    open to exploring new things. Right now, my interests lie in Data Science and web development
+                    although I am keeping all my options open.</p>
+                <div class="profile-position theme-toggle-button resume"><a
+                        href="https://drive.google.com/file/d/1y9EkfXi8cERMp_WiJPZsuThRLyJbGiAW/view?usp=sharing"
+                        target="_blank">RESUME</a></div>
             </div>
-            <br>
-            <div class = "icons">
-            <i class="fas fa-head-side-mask fa-2x"></i>
-            <div class = "content">
-              <h3>WEAR.A.FACE.MASK</h3>
-              <hr>
-              <p>Wear a face mask whenever you go out.</p>
-            </div>
-          </div>
-        <div class = "icons">
-        <i class="fas fa-home fa-2x"></i>
-        <div class = "content">
-            <h3>STAY.HOME</h3>
-            <hr>
-          <p>Stay home to lower chances of contracting the virus.</p>
-        </div>
-      </div>
-        <div class = "icons">
-        <i class="fas fa-hospital fa-2x"></i>
-        <div class = "content">
-          <h3>GET.HELP</h3>
-          <hr>
-          <p>If you experience any symptoms of COVID-19,get medical help immediately.</p>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
 
-      <div class = "box">
-        <div class = "box-content">
-          <h1><center>Summary of the Events in brief</center></h1>
-          <section class = "timeline-area">
-            <div class = "timeline-box">
-               <i class="fas fa-viruses fa-3x icon"></i>
-               <div class = "contents">
-                 <p>Virus originates from Wuhan,China. It slowly starts to affect spread to other South-East Asian countries like Malaysia, Taiwan,Singapore etc.</p>
-               </div>
+        </div>
+    </section>
+    <hr>
+    <section id="projects" class="project-title">
+        <header>
+            <h2 class="headings">Portfolio</h2>
+        </header>
+        <div class="grid-container">
+            <div class="project-images">
+                <img src="https://codepen.io/AdiBoy/pen/jOmBqeY/image/small.png" class="images" target="_blank">
+                <a href="https://codepen.io/AdiBoy/pen/jOmBqeY" class="project-tile" target="_blank">
+                    <div class="image-overlay">
+                        <div class="image-title">Tribute Page</div>
+                        <p class="description">A responsive tribute page created using HTML and CSS.</p>
+                    </div>
+                </a>
             </div>
-            <br>
-            <div class = "timeline-box">
-                <i class="fas fa-procedures fa-3x icon"></i>
-                <div class = "contents">
-                  <p>Europe slowly becomes one of the biggest hotspots for COVID-19.</p>
-                </div>
+            <div class="project-images">
+                <img src="https://codepen.io/AdiBoy/pen/jOmBBeq/image/small.png" class="images" target="_blank">
+                <a href="https://codepen.io/AdiBoy/pen/jOmBBeq" class="project-tile" target="_blank">
+                    <div class="image-overlay">
+                        <div class="image-title">Survey Page</div>
+                        <p class="description">A responsive survey page created using HTML and CSS. Makes use of
+                            background images and hsla colors to give a transparent look.</p>
+                    </div>
+                </a>
             </div>
-            <br>
-            <div class = "timeline-box">
-                <i class="fas fa-medkit fa-3x icon"></i>
-                <div class = "contents">
-                  <p>Eventually, this disease spreads to all parts of the globe with US becoming the worst affected region in the world</p>
-                </div>
-          </div>
-          <br>
-          <div class = "timeline-box">
-                <i class="fas fa-syringe fa-3x icon"></i>
-                <div class = "contents">
-                <p>Research is ongoing for a cure as the world fights against COVID-19. Lockdown measures relax in many parts of the world </p>
-              </div>
-          </div>
+            <div class="project-images">
+                <img src="https://codepen.io/AdiBoy/pen/KKmWjEE/image/small.png" class="images">
+                <a href="https://codepen.io/AdiBoy/pen/KKmWjEE" class="project-tile" target="_blank">
+                    <div class="image-overlay">
+                        <div class="image-title">Landing Page</div>
+                        <p class="description">A responsive landing page created using HTML and CSS. Makes use of CSS
+                            grid anf flexbox.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-images">
+                <img src="https://codepen.io/AdiBoy/pen/ZEYyLEP/image/small.png" class="images">
+                <a href="https://codepen.io/AdiBoy/pen/ZEYyLEP" class="project-tile" target="_blank">
+                    <div class="image-overlay">
+                        <div class="image-title">Technical Documentation Page</div>
+                        <p class="description">A responsive technical documentation page created using HTML and CSS.
+                            Makes use of CSS flexbox to create the layout.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="contact">
+        <h2 class="headings">Contact Me</h2>
+        <p>Let's work on some interesting projects together</p>
+        <div class="form">
+        </div>
+    </section>
+</body>
 
-          </section>
-        </div>
-      </div>
-      <div class = "box">
-        <div class = "box-content how"><h1>Global Impact</h1>
-          <br>
-          <p>The impact of COVID-19 can be felt throughout the world-taking lives, destroying livelihoods, and changing everything about how we interact
-             with each other and the world.</p>
-          <br>
-            <i class="fas fa-chart-area fa-5x icon"></i>
-          <p>On the economic side, the aviation industry has been hit the hardest.
-             Global trade is forcasted to drop by 27%. Poverty is expected to increase due to increase in unemployment.In the social front, the education of students has been  heavily compromised.</p>
-           <br>
-            <i class="fas fa-plus-square fa-5x icon"></i>
-           <p>That's not to say everything is bad. For one, this is a big opportunity for the Indian economy by encouraging local businesses to improve the
-             economy. This lockdown has also brought families together. The biggest positive has to be for the environment with
-             wildlife rejuvenating and carbon levels reduce in the atmosphere for the first time in nearly 30 years</p>
-            <br>
-            <p>So,this lockdown can become a bit more bearable when we look at the positive impacts
-             the COVID-19 pandemic has brought to India and the rest of the world!</p>
-        </div>
-      </div>
-      <div class = "box">
-        <div class = "box-content">
-              <h1>What is Social Distancing?</h1>
-              <br>
-              <p>Basically, social distancing means avoiding close contact with others. This term is being used to refer to a conscious
-              effort in order slow down community transmission of the virus.</p>
-              <br>
-              <p>This is the most important step that we have to take if we want to fight against the virus</p>
-              <br>
-              <h2><center>AVOID</center></h2>
-              <div class = "flexbox">
-                <div class = "icons">
-              <i class="fas fa-users fa-2x"></i>
-              <figcaption>Meeting people</figcaption>
-            </div>
-                <div class = "icons">
-                  <i class="fas fa-music fa-2x"></i>
-                <figcaption>Concerts</figcaption>
-                </div>
-                <div class = "icons">
-                  <i class="fas fa-running fa-2x"></i>
-                <figcaption>Sporting events</figcaption>
-                </div>
-                <div class = "icons">
-                <i class="fas fa-bus fa-2x"></i>
-                <figcaption>Public transport</figcaption>
-              </div>
-            </div>
-            <br>
-            <h2><center>TAKE CAUTION </center></h2>
-            <div class = "flexbox">
-              <div class = "icons">
-                <i class="fas fa-cocktail fa-2x"></i>
-            <figcaption>Restaurants</figcaption>
-          </div>
-              <div class = "icons">
-              <i class="fas fa-place-of-worship fa-2x"></i>
-              <figcaption>Religious places</figcaption>
-              </div>
-              <div class = "icons">
-                <i class="fas fa-suitcase-rolling fa-2x"></i>
-              <figcaption>Travel</figcaption>
-              </div>
-              <div class = "icons">
-              <i class="fas fa-store fa-2x"></i>
-              <figcaption>Grocery stores</figcaption>
-            </div>
-          </div>
-          <br>
-              <h2><center>SAFE TO DO</center></h2>
-          <div class = "flexbox">
-            <div class = "icons">
-            <i class="fas fa-brain fa-2x"></i>
-          <figcaption>Work at home</figcaption>
-        </div>
-            <div class = "icons">
-              <i class="fas fa-video fa-2x"></i>
-            <figcaption>Video chat</figcaption>
-            </div>
-            <div class = "icons">
-              <i class="fas fa-car fa-2x"></i>
-            <figcaption>Go for a drive</figcaption>
-            </div>
-            <div class = "icons">
-            <i class="fas fa-tv fa-2x"></i>
-            <figcaption>Watching movies</figcaption>
-          </div>
-        </div>
-        <br>
-              <h2>THINGS YOU CAN DO</h2>
-              <br>
-              <p>During this period, it is understandable if we get bored. After all, we are in our homes 24x7 and for the time being, we cannot go
-                out to meet our friends and family and have a social life in general. So, it is important we keep ourselves busy during this quarantine
-                to avoid negaive thoughts</p>
-              <br>
-              <div class = "flexcontainer">
-                <div class = "icons">
-                <i class="fas fa-phone-alt fa-2x"></i>
-                <div class = "content">
-                  <h3>Talk to your loved ones</h3>
-                  <hr>
-                  <p>Its normal to feel sad,angry,lonely,confused or scared in times like these. Talking to your loved ones can help. Try to keep in touch with them through
-                  phone calls or video chat. </p>
-                </div>
-            </div>
-                <div class = "icons">
-                  <i class="fas fa-dumbbell fa-2x"></i>
-                  <div class = "content">
-                    <h3>Exercise Regularly</h3>
-                    <hr>
-                    <p>Let's be honest here: Most of us have made plans to exercise regularly at some point in our life.But, our inability to maintain a
-                      work-life balance has not allowed us to execute these plans. This time though, things could be different.There are several online sources that can help
-                      us create an exercise routine. Also,try to eat healthy.After all, health is wealth.</p>
-                  </div>
-                </div>
-                <div class = "icons">
-                  <i class="fas fa-capsules fa-2x"></i>
-                  <div class = "content">
-                    <h3>Don't use drugs to cope</h3>
-                    <hr>
-                    <p>If you feel overwhelmed, talk to your loved ones or talk to a professional. Seek mental help if required. Remember: There is nothing wrong
-                    in asking for help.</p>
-                  </div>
-                </div>
-               <div class = "icons">
-                <i class="fas fa-pencil-alt fa-2x"></i>
-                <div class = "content">
-                  <h3>Revisit old hobbies</h3>
-                  <hr>
-                  <p>Revisit old hobbies that you had in your childhood to manage your emotions during this crisis.Also, they are a great way to kill time and you
-                    also have fun along the way.</p>
-                </div>
-              </div>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div id = "stats">
-        <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
-    </div>
-    <div id = "home" class = "flexcontainer">
-    <button class = "buttons" id = "footer-button"><a href = "#introduction">Go Home</a></button>
-    <p style = "color:#eee">Done with <i class="fas fa-wifi"></i> and <i class="fas fa-coffee"></i> </p>
-    <p style = "color:#eee">  Copyright © Adhetya Narayan 2020. All Rights Reserved</p>
-  </div>
-  </body>
 </html>
