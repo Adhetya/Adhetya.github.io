@@ -203,14 +203,16 @@ body.dark {
   padding: 2em;
   text-align: center;
 }
-@media (max-width: 600px)
+@media (max-width: 767px)
 {
   .card{
+    align-items: center;
     flex-direction: column;
   }
   .profile-main{
     text-align: center;
   }
+
 }
 .profile-sidebar > img{
   width: 200px;
@@ -233,9 +235,9 @@ body.dark {
 {
   opacity: 1;
 }
-.profile-main{
-  margin-left: 2em;
-}
+ .profile-main{
+  margin-left: 1em;
+} 
 .profile-name{
   font-size: 2em;
   line-height: 1;
