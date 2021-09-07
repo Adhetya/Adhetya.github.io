@@ -214,8 +214,7 @@ body.dark {
 }
 .profile-sidebar > img{
   width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  height: auto;
   border: 5px solid var(--accent-color);
 }
 .social-list{
