@@ -148,9 +148,9 @@ body.dark {
 	list-style: none;
 	width: 20px;
 	height: 20px;
-	background: rgba(96, 183, 199, 0.1);
+	background: var(--accent-color);
 	animation: animate 25s linear infinite;
-	bottom: calc(800px - 100vh)
+	bottom: calc(800px - 100vh);
 }
 
 .circles li:nth-child(1) {
