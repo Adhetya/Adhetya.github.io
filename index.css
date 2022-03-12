@@ -425,6 +425,7 @@ body.dark {
 }
 .profile-body{
   font-size: 1em;
+  width: 100%;
   text-align: left;
 }
 #projects {
@@ -521,19 +522,146 @@ header {
   position: relative;
   padding: 3rem;
   width: 100%;
-  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  text-align: center;
   color: var(--text-color);
 }
-#contact > p {
+.form{
+  width: 100%;
+  max-width: 1000px;
+  background-color: var(--accent-color);
+  z-index: 1000;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 0 20px 1px var(--accent-color);
+  overflow: hidden;
+}
+.contact-info{
+  background-color: var(--background-color);
+}
+.contact-form{
+  position: relative;
+}
+.contact-form:before{
+  content: " ";
+  position: absolute;
+  width: 26px;
+  height:26px;
+  background-color: var(--accent-color);
+  transform: rotate(45deg);
+  top: 50px;
+  left: -13px;
+}
+form{
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  font-size: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.input-container{
+  position: relative;
+  margin: 1.5rem 0;
+}
+.input{
+  width: 100%;
+  outline: none;
+  background: none;
+  color: var(--background-color);
+  border-radius: 25px;
+  border: 2px solid var(--background-color);
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+textarea{
+  padding: 0.5rem 1rem;
+  min-height: 150px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.input-container label{
+  position:absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: var(--background-color);
+  /* font-size: 1rem; */
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 10000;
+  transition: 0.3s;
+}
+.input-container.textarea label{
+  top: 1rem;
+  transform: translateY(0);
+}
+.submitBtn{
+  border: none;
+  padding: 0.75rem 1.2rem;
+  width: 100px;
+  background-color: var(--text-color);
+  font-size: 1.4rem;
+  border:2px solid var(--background-color);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.submitBtn:hover{
+  background-color: transparent;
+  color: var(--background-color);
+}
+
+.input-container span{
+  position: absolute;
+  top:0;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+  z-index: 500;
+}
+.input-container span:before,
+.input-container span:after{
+  content:"";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: var(--transition-delay);
+  height: 5px;
+  background-color: var(--accent-color);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-container span:before{
+  left: 50%;
+}
+.input-container span:after{
+  right: 50%;
+}
+.input-container.focus label{
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 1.2rem;
+}
+.input-container.focus span:before,
+.input-container.focus span:after{
+  width: 50%;
+  opacity: 1;
+}
+/* #contact > p {
   font-size: 2rem;
   color: var(--accent-color);
   margin: 15px 0;
-}
+} */
 .labels{
   font-size: 1.8rem;
   color: var(--accent-color);
@@ -546,43 +674,6 @@ header {
 }
 .response:focus{
   border-bottom: 2px solid var(--accent-color);
-}
-.personal-details{
-  width: 100%;
-  height: auto;
-  display: flex;
-}
-.personal-details > #name{
-  margin-right: 1rem;
-}
-.inputStyling{
-  color: var(--accent-color);
-  border: 2px solid var(--accent-color);
-  width: 100%;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  margin: 1rem 0;
-  background-color: var(--background-color);
-}
-textarea{
-  resize: vertical;
-}
-#submitBtn{
-  width: 30%;
-  font-size: 1.5rem;
-  background-color: var(--accent-color);
-  padding: 1rem;
-  border: none;
-  color: var(--background-color);
-  cursor: pointer;
-  border-radius: 0.5rem;
-  transition: var(--transition-delay);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-#submitBtn:hover{
-  transform: scale(1.1);
 }
 
 
