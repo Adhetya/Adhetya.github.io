@@ -392,6 +392,7 @@ body.dark {
   display: flex;
   width: 150px;
   margin: 1em auto 0.2em;
+  align-items: center;
   justify-content: space-around;
 }
 .social-link{
@@ -531,11 +532,12 @@ header {
   width: 100%;
   max-width: 1000px;
   background-color: var(--accent-color);
+  opacity: 0.9;
   z-index: 1000;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  box-shadow: 0 0 20px 1px var(--accent-color);
+  border: 1px solid var(--accent-color);
   overflow: hidden;
 }
 .contact-info{
@@ -676,4 +678,57 @@ textarea{
   border-bottom: 2px solid var(--accent-color);
 }
 
+.contact-info{
+  padding: 2.3rem 2.2rem;
+  position: relative;
+  font-size: 1.7rem;
+}
+.text{
+  color: var(--accent-color);
+  margin: 1.5rem 0;
+}
+.info{
+  margin: 1.5rem 0;
+  color: var(--accent-color);
+}
+.info i{
+  font-size: 2rem;
+  margin-right: 0.7rem;
+}
+.information{
+  display: flex;
+  margin: 1.5rem 0 0 0;
+  align-items: center;
+}
+.social-info{
+  padding: 2rem 0 0 0;
+}
+.social-info > p{
+  font-size: 2rem;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+.social-icon{
+  display: flex;
+  margin-top: 1rem;
+}
+.social-icon a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  margin-right: 1rem;
+  text-decoration: none;
+  /* text-align: center;
+  line-height: 40px; */
+  transition: var(--transition-delay);
+}
+.social-icon a:hover{
+  transform: scale(1.1);
+
+}
 
