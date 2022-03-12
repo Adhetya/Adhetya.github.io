@@ -57,7 +57,7 @@ body.dark {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 10000;
   transition: var(--transition-delay);
   animation: nav-load var(--nav-load-time) ease-in;
   text-transform: uppercase;
@@ -723,12 +723,15 @@ textarea{
   color: var(--background-color);
   margin-right: 1rem;
   text-decoration: none;
-  /* text-align: center;
-  line-height: 40px; */
   transition: var(--transition-delay);
 }
 .social-icon a:hover{
   transform: scale(1.1);
 
+}
+@media(max-width:600px){
+  .form{
+    grid-template-columns: 1fr;
+  }
 }
 
