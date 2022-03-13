@@ -735,3 +735,15 @@ textarea{
   }
 }
 
+#footer{
+  padding: 2.3rem 2.2rem;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  font-size: 2rem;
+  text-align: center;
+}
+.footer-text{
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0.75rem;
+}
+
