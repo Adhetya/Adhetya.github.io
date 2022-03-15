@@ -191,6 +191,19 @@
             </div>
             <div class="contact-form">
                 <form action="https://formsubmit.co/73f554ebfed810ab476e76bc5e602e7f" method="POST">
+                    <!--Honeypot-->
+                    <input type="text" name="name" class="honey">
+                    <label for="name" class="honey"></label>
+                    <input type="email" name="email" class="honey">
+                    <label for="name" class="honey"></label>
+                    <input type="text" name="subject" class="honey">
+                    <label for="subject" class="honey"></label>
+                    <textarea name="message" class="input" class="honey"></textarea>
+                    <label for="message"class="honey"></label>
+
+                    <!--Disable captcha-->
+                    <input type="hidden" name="_captcha" value="false">
+
                     <h3 class="headings">Send a messsage!</h3>
                     <div class="input-container">
                         <input type="text" name="name" class="input">
