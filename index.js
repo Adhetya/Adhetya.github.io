@@ -5,6 +5,16 @@
 //     navbarLinks.classList.toggle("active");
 // });
 
+var menu = document.getElementById("navbar");
+
+function closeMenu(){
+    navbar.style.top = "-100vh";
+}
+
+function openMenu(){
+    navbar.style.top = "0";
+}
+
 document.querySelector(".theme-toggle-button").addEventListener("click", () => {
     document.body.classList.toggle("dark");
 });
