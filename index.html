@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css">
     <title>My Website</title>
 </head>
 
 
 <body>
-    <nav id="navbar">
+    <nav id="navbar" data-aos="fade">
         <div class="logo">AN</div>
         <a href="#" class="toggle-button">
             <span class="bar"></span>
@@ -29,7 +30,7 @@
             </ul>
         </div>
     </nav>
-    <section id="welcome-section">
+    <section id="welcome-section" data-aos="fade-up">
         <h1>Hi, my name is Adhetya</h1>
         <p>Student | Aspiring Web Developer</p>
         <button class="theme-toggle-button">
@@ -52,7 +53,7 @@
         </ul>
     </section>
     <hr>
-    <section id="about">
+    <section id="about" data-aos="fade-left">
         <div class="card">
             <div class="profile-sidebar">
                 <img src="assets/Adhetya Image.jpg" alt="Photo">
@@ -98,7 +99,7 @@
         </ul>
     </section>
     <hr>
-    <section id="projects" class="project-title">
+    <section id="projects" class="project-title" data-aos="fade-right">
         <header>
             <h2 class="headings">Portfolio</h2>
         </header>
@@ -157,7 +158,7 @@
         </ul>
     </section>
     <hr>
-    <section id="contact">
+    <section id="contact" data-aos="fade-left">
         <div class="form">
             <div class="contact-info">
                 <h3 class = "headings">Contact me</h3>
@@ -251,6 +252,14 @@
 
     </section>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+       AOS.init({
+            offset: 400, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000 // values from 0 to 3000, with step 50ms
+        });
+    </script>
 </body>
 
 </html>
