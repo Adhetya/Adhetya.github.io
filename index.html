@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css">
     <title>My Website</title>
@@ -15,12 +18,12 @@
 
 <body>
     <nav id="navbar" data-aos="fade">
-        <div class="logo">AN</div>
-        <a href="#" class="toggle-button">
+        <!-- <div class="logo">AN</div> -->
+        <!-- <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </a>
+        </a> -->
         <div class="navbar-links">
             <ul>
                 <li><a href="#welcome-section">Home</a></li>
@@ -28,8 +31,14 @@
                 <li><a href="#projects">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <span class = "light-text">Menu</span>
+        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
         </div>
     </nav>
+     <div class="header">
+         <div class="logo">AN</div>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+     </div>
     <section id="welcome-section" data-aos="fade-up">
         <h1>Hi, my name is Adhetya</h1>
         <p>Student | Aspiring Web Developer</p>
