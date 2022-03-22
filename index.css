@@ -214,7 +214,7 @@ body.dark {
             }
         }
 
-   /* @media (min-width: 1281px) {
+   @media (min-width: 1920px) {
           .heading{
               text-align: left;
               padding: 3.5rem 3rem;
@@ -238,7 +238,7 @@ body.dark {
               margin-top: 4rem;
             }
          
-        } */
+        }
 .circles {
 	position: absolute;
 	bottom: 0;
@@ -547,16 +547,45 @@ body.dark {
       font-size: 1.7rem;
     }
 }
-
-@media(min-width: 1281px){
-      /* .profile-sidebar > img{
-      width: 500px;
-    } */
-        .social-list{
-      width: 500px;
+   @media (min-width: 1920px) {
+     .profile-sidebar{
+       padding: 4rem 3.5rem;
+     }
+    .profile-sidebar >img{
+            width: 500px;
+    }
+    .profile-sidebar{
+      margin-left: 3rem;
+    }
+    .card-container{
+      max-width: 1500px;
+    }
+    .profile-main{
+      width: 100%;
+      margin-left: 5rem;
+    }
+    .profile-name{
+      font-size: 6rem;
+    }
+    .profile-position{
+      font-size: 4rem;
+    }
+    .social-link{
+      font-size: 2.5rem;
+    }
+    .profile-body{
+      font-size: 2.5rem;
+    }
+    .resume{
+      padding: 2rem 3rem;
+    }
+    .resume a{
+      font-size: 3rem;
     }
 
-}
+        
+         
+        }
 
 #projects {
   position: relative;
@@ -670,6 +699,38 @@ header {
   text-align: center;
   color: var(--text-color);
   font-size: 3.5rem;
+}
+@media (min-width: 1920px){
+  #projects{
+    padding: 3rem 0;
+  }
+  .projects-container{
+    padding: 3rem 3.2rem;
+  }
+  #projects header{
+    font-size: 4rem;
+  }
+  .project-card{
+    width: 500px;
+    height: 300px;
+    padding: 2.7rem;
+  }
+  .project-info i{
+    font-size: 3.5rem;
+  }
+  .project-links i{
+    font-size: 2.5rem;
+  }
+  .subtext h3{
+    font-size: 2.7rem;
+  }
+  .subtext{
+    font-size: 2rem;
+  }
+  .tech-stack{
+    font-size: 1.5rem;
+  }
+
 }
 /* .images {
   width: 100%;
@@ -969,6 +1030,26 @@ textarea{
   .social-info p{
     font-size: 1.8rem;
   }
+}
+
+@media(min-width: 1920px){
+  .form{
+    max-width: 1250px;
+    height: 500px;
+  }
+  .contact-info{
+    font-size: 2.2rem;
+  }
+  .headings{
+    font-size: 3rem;
+  }
+  .social-info p{
+    font-size: 2rem;
+  }
+  .input-container{
+    font-size: 1;
+  }
+  
 }
 
 #footer{
