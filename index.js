@@ -1,19 +1,34 @@
-// const toggleButton = document.getElementsByClassName("toggle-button")[0];
-// const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
-// toggleButton.addEventListener("click", () => {
-//     navbarLinks.classList.toggle("active");
-// });
+toggleButton.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+});
 
-var menu = document.getElementById("navbar");
+// var menu = document.getElementById("navbar");
 
-function closeMenu(){
-    navbar.style.top = "-100vh";
-}
+// function closeMenu(){
+//     navbar.style.top = "-100vh";
+// }
 
-function openMenu(){
-    navbar.style.top = "0";
-}
+// function openMenu(){
+//     navbar.style.top = "0";
+// }
+
+// const navSlide = () => {
+//     const burger = document.querySelector(".burger");
+//     const nav = document.querySelector(".navbar-links");
+
+//     burger.addEventListener("click", () => {
+//         nav.classList.toggle("nav-active");
+//         document.body.classList.toggle("blur-bg");
+
+
+//     });
+
+// }
+// navSlide();
+
 
 document.querySelector(".theme-toggle-button").addEventListener("click", () => {
     document.body.classList.toggle("dark");
