@@ -7,7 +7,7 @@
 }
 :root {
   --navy: hsla(208, 50%, 23%,1);
-  --light-orange: #ef970f;
+  --light-orange: #f16208;
   --almond: #f5f0e1;
   --transition-delay: 0.7s;
   --accent-color: var(--navy);
