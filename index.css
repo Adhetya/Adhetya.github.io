@@ -26,6 +26,7 @@ body {
   background: var(--background-color);
   color: var(--text-color);
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
   
 }
 body.dark {
