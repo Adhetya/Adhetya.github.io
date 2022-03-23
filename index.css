@@ -605,8 +605,8 @@ body.dark {
     }
     .profile-sidebar > img{
       display: flex;
-      width: 100%;
-      height: auto;
+      width: 640px;
+      height: 320px;
       margin: 0 auto;
     }
     .social-list{
