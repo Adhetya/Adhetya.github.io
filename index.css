@@ -238,6 +238,9 @@ body.dark {
   padding: 3rem 3.3rem;
   margin: 0 2.5rem;
 }
+.logo{
+  color: var(--background-color);
+}
 .heading span{
   font-size: 2.3rem;
   font-family: 'Roboto Mono', monospace;
@@ -960,6 +963,9 @@ textarea{
   min-height: 150px;
   resize: none;
   overflow-y: auto;
+}
+#form-heading{
+  color: var(--background-color);
 }
 
 .input-container label{

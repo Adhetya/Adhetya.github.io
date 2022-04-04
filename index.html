@@ -12,7 +12,7 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" / defer>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css">
     <title>Adhetya Narayan</title>
@@ -381,14 +381,18 @@
             <div class="contact-form">
                 <form action="https://formsubmit.co/73f554ebfed810ab476e76bc5e602e7f" method="POST">
                     <!--Honeypot-->
-                    <label for="name" class="honey">Name</label>
+                    <label for="name" class="honey">Name
                     <input type="text" name="name" class="honey">
-                    <label for="name" class="honey">Email</label>
+                    </label>
+                    <label for="name" class="honey">Email
                     <input type="email" name="email" class="honey">
-                    <label for="subject" class="honey">Subject</label>
+                    </label>
+                    <label for="subject" class="honey">Subject
                     <input type="text" name="subject" class="honey">
-                    <label for="message" class="honey">Message</label>
+                    </label>
+                    <label for="message" class="honey">Message
                     <textarea name="message" class="honey"></textarea>
+                    </label>
 
 
                     <!--Disable captcha-->
@@ -396,7 +400,7 @@
 
                     <input type="hidden" name="_next" value="https://adhetya.github.io/success.html">
 
-                    <h3 class="headings">Send a messsage!</h3>
+                    <h3 class="headings" id ="form-heading">Send a messsage!</h3>
                     <div class="input-container">
                         <input type="text" name="name" class="input">
                         <label for="name">Name</label>
