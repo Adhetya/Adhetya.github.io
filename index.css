@@ -7,7 +7,7 @@
 }
 :root {
   --navy: hsla(208, 50%, 23%,1);
-  --light-orange: #f16208;
+  --light-orange: 	#FF7F50;
   --almond: #f5f0e1;
   --transition-delay: 0.7s;
   --accent-color: var(--navy);
@@ -615,9 +615,6 @@ body.dark {
     }
     .profile-sidebar > img{
       display: flex;
-      width: 640px;
-      height: 320px;
-      margin: 0 auto;
     }
     .social-list{
       width: 320px;
@@ -1145,6 +1142,10 @@ textarea{
     font-size: 1;
   }
 
+}
+.top-symbol a{
+  font-size:  2rem;
+  color: var(--background-color);
 }
 
 #footer{
