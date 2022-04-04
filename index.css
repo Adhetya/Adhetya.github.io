@@ -30,7 +30,7 @@ body {
 
 }
 body.dark {
-  --background-color: #333;
+  --background-color: #28282B;
   --accent-color: #d0d066;
   --text-color: #eee;
  transition: var(--transition-delay);
