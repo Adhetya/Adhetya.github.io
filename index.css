@@ -7,12 +7,12 @@
 }
 :root {
   --navy: hsla(208, 50%, 23%,1);
-  --light-orange: 	#FF7F50;
+  --light-purple: #D12600;
   --almond: #f5f0e1;
   --transition-delay: 0.7s;
   --accent-color: var(--navy);
   --background-color: var(--almond);
-  --text-color: var(--light-orange);
+  --text-color: var(--light-purple);
   --nav-load-time: 400ms;
   --article-load-delay: 500ms;
 }
