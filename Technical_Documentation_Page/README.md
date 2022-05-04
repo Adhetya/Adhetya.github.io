@@ -7,5 +7,5 @@ A simple technical documentation page to improve your HTML and CSS Skills. Creat
 - HTML
 - CSS
 
-## Screenshot
-![image](https://drive.google.com/file/d/1NDvS-BZU-bcHRLuU4Pe0ayvEXTgbs-l6/view?usp=sharing)
+## Project link
+https://adhetya.github.io/Technical_Documentation_Page/
