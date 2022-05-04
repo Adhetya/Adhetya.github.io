@@ -1108,4 +1108,7 @@ textarea {
   .footer-text {
     font-size: 1.2rem;
   }
+  .dropdown-caret{
+    display: none;
+  }
 }
