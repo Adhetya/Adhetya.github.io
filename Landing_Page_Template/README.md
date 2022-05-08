@@ -9,8 +9,8 @@ A landing page template created using HTML, CSS , JS. Uses CSS grid and flexbox 
 ## Screenshots
 
 ### Desktop view:
-![desktop-view](Landing_Page_Template/assets/images/Desktop_view.png)
+![desktop-view](assets/images/Desktop_view.png)
 
 
 ### Mobile view:
-![mobile-view](Landing_Page_Template/assets/images/Mobile_view.png)
+![mobile-view](assets/images/Mobile_view.png)
