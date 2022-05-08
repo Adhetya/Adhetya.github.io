@@ -9,7 +9,9 @@ A landing page template created using HTML, CSS , JS. Uses CSS grid and flexbox 
 ## Screenshots
 
 ### Desktop view:
-![desktop-view]("https://drive.google.com/file/d/1WM7qB4b1ojpvWz56LEOpI12L5fJ5ZfAP/view?usp=sharing")
+
+<img src="https://drive.google.com/file/d/1WM7qB4b1ojpvWz56LEOpI12L5fJ5ZfAP/view?usp=sharing" alt="Desktop view" style="height: auto; width:100%;"/>
 
 ### Mobile view:
-![movbile-view]("https://drive.google.com/file/d/1Lo8w3HL_v1Xa7QzPCbicaCPBCkVK5YSh/view?usp=sharing")
+
+<img src="https://drive.google.com/file/d/1Lo8w3HL_v1Xa7QzPCbicaCPBCkVK5YSh/view?usp=sharing" alt="Desktop view" style="height: auto; width:100%;"/>
