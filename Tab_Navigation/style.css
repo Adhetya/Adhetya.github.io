@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,body{
+    overflow-x: hidden;
+}
 
 [data-tab-content] {
     display: none;
@@ -45,6 +48,15 @@
 .row img {
     width: 100%;
     height: auto;
+}
+@media (max-width: 600px) {
+    .grid-container {
+        display: block;
+    }
+
+    .row {
+        padding: 1.5rem 3rem;
+    }
 }
 
 
