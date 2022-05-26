@@ -6,4 +6,4 @@ A simple restaurant survey form.
 - CSS
 
 # Project Link:
-https://adhetya.github.io/Tab_Navigation/
+https://adhetya.github.io/Survey_Form/
