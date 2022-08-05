@@ -675,6 +675,11 @@ body.dark {
   font-weight: 300;
   margin-bottom: 1rem;
 }
+.text-link{
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+}
 
 .project-links i {
   font-size: 2.2rem;
