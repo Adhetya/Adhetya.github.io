@@ -5,3 +5,5 @@ Built a weather app using the OpenWeatherMap API. Can get the weather details of
 * HTML
 * CSS
 * JavaScript
+ 
+ Project link: https://adhetya.github.io/Weather-App/
